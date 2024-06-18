@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Superstar Visualization Graph</title>
+        <link rel="stylesheet" href="index.css"/>
+    </head>
+    <body>
+        <header>
+            <span>Superstar Visualization Graph</span>
+            <div id="tabs-container">
+                <div id="tabs">
+                    <div id="button-art" class="button-selected">
+                        <span>Art</span>
+                    </div>
+                    <div id="button-computer_science">
+                        <span>Computer Science</span>
+                    </div>
+                    <div id="button-engineering">
+                        <span>Engineering</span>
+                    </div>
+                    <div id="button-history">
+                        <span>History</span>
+                    </div>
+                    <div id="button-law">
+                        <span>Law</span>
+                    </div>
+                    <div id="button-physics" title="Warning: This graph is very large and slow.">
+                        <span>Physics &#x26A0;</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div id="cy">
+
+            </div>
+        </main>
+        <div id="footer-container">
+            <footer>
+                <p>
+                    <b>Preston Hull / TU Delft / 2024</b>
+                    <br/>
+                    <br/>
+                    This graph is a part of the bachelor thesis titled "Visualizing Collaboration with Superstars: A Novel Approach to Visualizing Collaboration"
+                    available at <a href="https://repository.tudelft.nl/">https://repository.tudelft.nl/</a>. This paper is authored and this visualization is created
+                    in partial fulfilment of the requirements of the Delft University of Technology Bachelor of Computer Science and Engineering.
+                </p>
+            </footer>
+        </div>
+        <script 
+            src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.29.2/cytoscape.min.js"
+            integrity="sha512-yi5TwB0WBpzqlJXNLURNMtpFXJt4yxJhkOG8yqkVQYWhfMkAoDF93rZ/KjfoN1gADGr5uKXvr5/Bw6CC03YWpA=="
+            crossorigin="anonymous" 
+            referrerpolicy="no-referrer">
+        </script>
+        <script src="index.js"></script>
+    </body>
+</html>

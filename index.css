@@ -1,0 +1,104 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: light-dark(#e8e8e8, #282828);
+    color: light-dark(#282828, #e8e8e8);
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: block;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    text-align: center;
+    background-color: light-dark(#eeeeee, #333333);
+}
+
+header > span {
+    font-size: 48px;
+}
+
+main {
+    height: 100%;
+}
+
+#cy {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+#footer-container {
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: light-dark(#e0e0e0, #383838);
+}
+
+#tabs-container {
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+}
+
+#tabs {
+    background-color: light-dark(#cccccc, #444444);
+    margin-top: 20px;
+    height: 56px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+#tabs > div {
+    display: inline;
+    padding-top: 16px;
+    padding-bottom: 20px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    cursor: pointer;
+}
+
+#tabs > div.button-selected:hover {
+    background-color: light-dark(#dddddd, #222222);
+}
+
+#tabs > div:hover {
+    background-color: light-dark(#bbbbbb, #333333);
+}
+
+#tabs > div > span {
+    line-height: 52px;
+}
+
+.button-selected {
+    background-color: light-dark(#dddddd, #222222);
+    border: 1px solid black;
+}
+
+footer {
+    width: 90%;
+    max-width: 1024px;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    gap: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
